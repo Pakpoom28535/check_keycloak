@@ -4,7 +4,7 @@ const app = express(); //สร้างตัวแปร myApp เพื่อ
 const port = 3000; //พอร์ตของ Server ที่ใช้ในการเปิด Localhost 
 const client_id = 'myclient';
 const client_secret = 'pclEGbe5Q4FHqEMeTcNPqq3F2WhQG068';
-const REACT_APP_URL = 'http://host.docker.internal:8080';
+const REACT_APP_URL = 'http://172.17.0.2:8080';
 
 // const REACT_APP_URL = 'http://141.11.33.31:8080';
 // const REACT_APP_URL = 'http://localhost:8080';
