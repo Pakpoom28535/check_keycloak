@@ -6,7 +6,7 @@ const client_id = 'myclient';
 const client_secret = 'pclEGbe5Q4FHqEMeTcNPqq3F2WhQG068';
 //const REACT_APP_URL = 'http://141.11.33.31:8080';
 // const REACT_APP_URL = 'http://localhost:8080';
-const REACT_APP_URL = 'http://host.docker.internal:8080'; // or use host IP if on Linux
+const REACT_APP_URL = 'http://127.0.0.1:8080'; // or use host IP if on Linux
 const cors = require('cors');
 const bodyParser = require('body-parser'); // Import body-parser
 
@@ -97,5 +97,5 @@ app.post('/check_token', async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
+  console.log(`Server running at http://127.0.0.1:${port}/`);
 });
