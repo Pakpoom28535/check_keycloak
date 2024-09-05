@@ -158,11 +158,7 @@ async function getUsers_Group(user_uuid,token) {
     const list_data = await response.json(); // Await the parsed JSON
     if (list_data.length === 0) {
       // If no data, return default group values
-      return {
-        Group_id: null,
-        Group: null,
-        Sub_Group: null,
-      };
+      return null;
     }
     this_gruop = list_data[0]
     grouop_array = this_gruop.path.split("/")
