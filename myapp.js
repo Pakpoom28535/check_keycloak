@@ -93,7 +93,7 @@ app.post('/check_token', async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
-app.get("/Get_User", async (req, res) => {
+app.get("/get_user", async (req, res) => {
   try {
     const authHeader = req.headers["authorization"];
     if (!authHeader) {
