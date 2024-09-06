@@ -164,7 +164,7 @@ async function getUsers_Group(user_uuid,token) {
     grouop_array = this_gruop.path.split("/")
     res = {
       Group_id : this_gruop.id,
-      Group : grouop_array[1],
+      Group_Name : grouop_array[1],
       Sub_Group : grouop_array[2],
     };
     return res;
