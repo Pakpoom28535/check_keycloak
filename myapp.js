@@ -2,9 +2,9 @@ const express = require('express'); //เรียกใช้ express ผ่า
 const { swaggerUi, swaggerDocs } = require('./swagger'); // Import Swagger configuration
 const app = express(); //สร้างตัวแปร myApp เพื่อใช้งาน express 
 const port = 3000; //พอร์ตของ Server ที่ใช้ในการเปิด Localhost 
-const client_id = 'myclient';
-const client_secret = 'pclEGbe5Q4FHqEMeTcNPqq3F2WhQG068';
-const REACT_APP_URL = 'http://141.11.33.31:8080';
+const client_id = 'KpiClient';
+const client_secret = 'Exa59cdOnYvaoXu7BRgNqjn5voRmr81n';
+const REACT_APP_URL = 'http://141.11.33.30';
 const cors = require('cors');
 const bodyParser = require('body-parser'); 
 
