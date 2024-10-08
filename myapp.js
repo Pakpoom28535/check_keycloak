@@ -7,7 +7,7 @@ const client_secret = 'Exa59cdOnYvaoXu7BRgNqjn5voRmr81n';
 const REACT_APP_URL = 'http://141.11.33.30';
 const cors = require('cors');
 const bodyParser = require('body-parser'); 
-
+const Real_name = 'MotorwayRealm';
 const { URLSearchParams } = require('url');
 
 // Middleware to parse URL-encoded bodies
@@ -69,7 +69,7 @@ app.post('/check_token', async (req, res) => {
       error: 'Client secret not match',
     });
   }
-  const url = `${REACT_APP_URL}/realms/myrealm/protocol/openid-connect/token/introspect/`;
+  const url = `${REACT_APP_URL}/realms/${Real_name}/protocol/openid-connect/token/introspect/`;
   const params = new URLSearchParams();
   params.append('client_id', client_id);
   params.append('client_secret', client_secret);
