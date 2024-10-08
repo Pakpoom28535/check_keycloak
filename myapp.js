@@ -106,7 +106,7 @@ app.get("/get_user", async (req, res) => {
       headers: myHeaders,
       redirect: "follow",
     };
-    const url = `${REACT_APP_URL}/admin/realms/myrealm/users/`;
+    const url = `${REACT_APP_URL}/admin/realms/${Real_name}/users/`;
 
     try {
       const response = await fetch(url, requestOptions);
@@ -144,7 +144,7 @@ async function getUsers_Group(user_uuid,token) {
     redirect: "follow",
   };
   try {
-    const url = `${REACT_APP_URL}/admin/realms/myrealm/users/${user_uuid}/groups`;
+    const url = `${REACT_APP_URL}/admin/realms/${Real_name}/users/${user_uuid}/groups`;
 
     const response = await fetch(
       url,
