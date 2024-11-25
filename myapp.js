@@ -69,7 +69,7 @@ app.post('/check_token', async (req, res) => {
       error: 'Client secret not match',
     });
   }
-  const url = `${REACT_APP_URL}/realms/${Real_name}/protocol/openid-connect/token/introspect/`;
+  const url = 'http://141.11.33.30:80/realms/MotorwayRealm/protocol/openid-connect/token/introspect/';
   const params = new URLSearchParams();
   params.append('client_id', client_id);
   params.append('client_secret', client_secret);
